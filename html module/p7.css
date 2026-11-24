@@ -1,0 +1,37 @@
+/* Step 1: Apne design tokens (variables) define karein */
+:root {
+  /* Fonts */
+  --font-main: 'Inter', Arial, sans-serif;
+
+  /* Text Sizes */
+  --size-small: 14px;
+  --size-body: 16px;
+  --size-heading: 32px;
+
+  /* Font Weights */
+  --weight-normal: 400;
+  --weight-bold: 700;
+
+  /* Colors */
+  --text-dark: #111111;
+  --text-gray: #555555;
+}
+
+/* Step 2: In tokens ko apne HTML elements par apply karein */
+body {
+  font-family: var(--font-main);
+  font-size: var(--size-body);
+  font-weight: var(--weight-normal);
+  color: var(--text-dark);
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: var(--size-heading);
+  font-weight: var(--weight-bold);
+}
+
+.small-text {
+  font-size: var(--size-small);
+  color: var(--text-gray);
+}
